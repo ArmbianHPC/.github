@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: GPL-3.0-only
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and ideas / 使用咨询与建议
+    url: https://github.com/ArmbianHPC/armbian-hpc/discussions
+    about: Ask usage questions or discuss an approach before opening a defect report.
+  - name: Private security report / 私密漏洞报告
+    url: https://github.com/ArmbianHPC/.github/blob/main/SECURITY.md
+    about: Follow the security policy for vulnerabilities or suspected credential exposure.

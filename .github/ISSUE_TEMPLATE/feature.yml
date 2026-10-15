@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: GPL-3.0-only
+name: Feature request / 功能建议
+description: Describe a useful change and the problem it solves.
+title: "[Feature]: "
+labels: ["type:enhancement"]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Need and proposed behavior / 需求与建议行为
+      description: Explain the workflow, affected component and desired outcome. English or Simplified Chinese is welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility and alternatives / 兼容性与其他方案
+      description: Mention affected commands, devices, existing configuration and recovery considerations.

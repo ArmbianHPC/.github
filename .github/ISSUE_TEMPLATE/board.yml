@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: GPL-3.0-only
+name: Board integration / 板卡接入
+description: Provide hardware facts and public source references for a new board.
+title: "[Board]: "
+labels: ["type:board"]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Model and PCB revision / 型号与 PCB 版本
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Hardware and access / 硬件与接入方式
+      description: SoC, RAM, storage, Ethernet, available console/download modes and an on-site recovery method.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Public source and license references / 公开来源及许可
+      description: Link existing DTS/kernel/boot sources and licensing records. Do not attach proprietary loaders, keys, backups or identity partitions.
+    validations:
+      required: true

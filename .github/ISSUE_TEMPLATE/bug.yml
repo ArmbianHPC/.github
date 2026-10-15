@@ -1,0 +1,43 @@
+# SPDX-License-Identifier: GPL-3.0-only
+name: Bug report / 问题反馈
+description: Report a reproducible software, firmware or device issue.
+title: "[Bug]: "
+labels: ["type:bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Use English or Simplified Chinese. Remove passwords, keys, tokens and personal device data before posting. 漏洞请私密报告，不上传完整备份或原始身份分区。"
+  - type: input
+    id: version
+    attributes:
+      label: Versions / 版本
+      description: Controller, agent and system release; include the kernel for boot/driver issues.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and connection / 设备与连接
+      description: Model and PCB revision, host OS, SSH or selected serial port. Use n/a when unrelated.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps and observed behavior / 步骤与实际现象
+      description: Include the operation, reproducible steps, expected/actual behavior and any manual recovery.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Redacted diagnostics / 脱敏诊断
+      description: Relevant status/doctor output and logs. Explain when diagnostics cannot be obtained.
+      render: text
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before submitting / 提交前
+      options:
+        - label: I removed real credentials, private keys, tokens and raw device identity/backup data.
+          required: true
